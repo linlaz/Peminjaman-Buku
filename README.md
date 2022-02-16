@@ -13,6 +13,9 @@ copy .env.example .env
 composer install
 ```
 ```
+php artisan storage:link
+```
+```
 php artisan key:generate
 ```
 ```
