@@ -1,4 +1,26 @@
 # Peminjaman-Buku
+## Clone WEB
+```
+git clone https://github.com/linlaz/Peminjaman-Buku.git
+```
+```
+cd Peminjaman-Buku
+```
+```
+copy .env.example .env
+```
+```
+php artisan key:generate
+```
+```
+php artisan migrate
+```
+```
+php artisan db:seed
+```
+```
+php artisan serve
+```
 ## Fitur WEB
 ### Dashboard Admin
 > Manage Role And Permission User
