@@ -19,8 +19,7 @@
                     <td>{{ $item->borrow->start_borrow }}</td>
                     <td>{{ $item->borrow->finish_borrow }}</td>
                     <td>
-
-                        @if ($item->borrow->start_borrow < date('Y-m-d'))
+                        @if (date('Y-m-d') < $item->borrow->start_borrow)
                             <span class="badge bg-primary">Belum waktunya</span>
                         @else
                             @if ($item->borrow->back != '1')

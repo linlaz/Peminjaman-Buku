@@ -50,7 +50,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="bg-dark w-100"></div>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
                 <form method="POST" action="{{ route('logout') }}">
@@ -61,9 +61,6 @@
                         </a>
                     </button>
                 </form>
-                {{-- <form action="{{ route('logout') }}">
-                    <a class="n" href="#">Sign out</a>
-                </form> --}}
             </div>
         </div>
     </header>
