@@ -45,9 +45,9 @@
                         @role('admin')
                             <li><a class="getstarted scrollto" href="/dashboard">dashboard</a></li>
                         @else
-                            <form action="{{ route('logout') }}">
+                            <form action="{{ route('logout') }}" method="post">
                                 @csrf
-                                <li><button type="submit" class="getstarted scrollto" href="/dashboard">dashboard</button></li>
+                                <li><button type="submit" class="getstarted scrollto">logout</button></li>
                             </form>
                         @endrole
                         
