@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -58,9 +57,9 @@ class DatabaseSeeder extends Seeder
 
         $admin->givePermissionTo(['add-role', 'edit-role', 'delete-role', 'add-permission', 'edit-permission', 'delete-permission']);
         $user = User::create([
-            'name' => 'lintang lazuardi',
-            'password' => bcrypt('linlaz11'),
-            'email' => 'lazuardilintang@apps.ipb.ac.id',
+            'name' => 'admin',
+            'password' => bcrypt('admin'),
+            'email' => 'admin@gmail.com',
         ]);
         $user->assignRole('admin');
     }
