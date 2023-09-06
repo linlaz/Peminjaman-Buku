@@ -24,6 +24,11 @@ php artisan migrate:fresh --seed
 ```
 php artisan serve
 ```
+```
+username : admin
+email : admin@gmail.com
+password : admin
+```
 ## Fitur WEB
 ### Dashboard Admin
 > Manage Role And Permission User
